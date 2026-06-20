@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS thư viện -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- CSS thư viện fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+
+
+
+
+    <!-- main css : code ưu tiên cao nhất-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- css internal-->
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- HTML4 -->
+    <!-- emmet: 
+         div.carousel, .carousel-->
+    <!-- <div class="header"></div>
+    <div class="carousel"></div>
+    <div class="product"></div>
+    <div class="showcase"></div>
+    <div class="blog"></div>
+    <div class="number"></div>
+    <div class="exp"></div>
+    <div class="contact"></div>
+    <div class="footer"></div> -->
+
+    <!-- HTML5
+     đa con trỏ: alt / option + click chuột -->
+    <header>
+        <!-- con trực tiếp  -->
+        <nav>
+            <!-- logo -->
+            <div class="logo">
+                <!-- icon font-awesome-->
+                <a href="">
+                    <i class="fa-brands fa-atlassian"></i>
+                    <!-- <p>meipaly</p> -->
+                    <!-- Cách 2: thay đổi thẻ khác loại là thẻ inline -->
+                    <span>meipaly</span>
+
+                </a>
+            </div>
+            <!-- menu , ds không có thứ tự thường được dùng cho xây dựng thanh điều hướng
+             ul>li*6>a -->
+            <ul>
+                <li class="active"><a href="">HOME</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">SHOWCASE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <!-- BEM : Block(cha chính) Element (thẻ con) Modifier(sửa riêng)
+         trong tên class thẻ con sẽ chứa tên thẻ cha, nối tên bằng 2 dấu gạch dưới carousel__content 
+         carousel_content, carousel-content-->
+        <div class="carousel_content">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h1>SMART WEB <br> DESIGN AGENCY</h1>
+            <button>READ MORE</button>
+            <div class="carousel_arrow">
+                <a href="#">
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="product"></section>
+
+    <section class="showcase">
+        <div class="showcase_container">
+            <div class="showcase_title">
+                <p>OUR PORTFOLIO</p>
+                <h2>WORK SHOWCASE</h2>
+                <p>We are committed to providing our customers with exceptional service while offering our
+                    employees the best training.</p>
+            </div>
+            <div class="showcase_content">
+
+                <div class="showcase_items">
+                    <img src="./img/showcase_img_1.webp" alt="">
+
+                    <!-- div có nền hồng -->
+                    <div class="showcase_overlay">
+                        <div class="showcase_icon">
+                            <a href="./img/showcase_img_1.webp" data-fancybox="showcase">
+                                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                            </a>
+
+                        </div>
+                        <div class="showcase_text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="showcase_items">
+                    <img src="./img/showcase_img_2.webp" alt="">
+                    <!-- div có nền hồng -->
+                    <div class="showcase_overlay">
+                        <div class="showcase_icon">
+                            <a href="./img/showcase_img_2.webp" data-fancybox="showcase">
+                                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                            </a>
+
+                        </div>
+                        <div class="showcase_text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="showcase_items">
+                    <img src="./img/showcase_img_3.webp" alt="">
+
+                    <div class="showcase_overlay">
+                        <div class="showcase_icon">
+                            <a href="./img/showcase_img_3.webp" data-fancybox="showcase">
+                                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                            </a>
+
+                        </div>
+                        <div class="showcase_text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="showcase_items">
+                    <img src="./img/showcase_img_5.webp" alt="">
+                    <div class="showcase_overlay">
+                        <div class="showcase_icon">
+                            <a href="">
+                                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                            </a>
+
+                        </div>
+                        <div class="showcase_text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase_items">
+                    <img src="./img/showcase_img_6.webp" alt="">
+                    <div class="showcase_overlay">
+                        <div class="showcase_icon">
+                            <a href="">
+                                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                            </a>
+
+                        </div>
+                        <div class="showcase_text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase_items">
+                    <img src="./img/showcase_img_7.webp" alt="">
+                    <div class="showcase_overlay">
+                        <div class="showcase_icon">
+                            <a href="">
+                                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                            </a>
+
+                        </div>
+                        <div class="showcase_text">
+                            <p>LOGO</p>
+                            <h3>FLIPPIN BIRD</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="blog"></section>
+
+
+    <section class="number">
+        <div class="number_content">
+            <div class="number_items">
+                <p class="number_count">8,705</p>
+                <p>PROJECTS COMPLETED</p>
+            </div>
+
+            <div class="number_items">
+                <p class="number_count">480</p>
+                <p>ACTIVE CLIENTS</p>
+            </div>
+
+            <div class="number_items">
+                <p class="number_count">625</p>
+                <p>CUPS OF COFFEE</p>
+            </div>
+
+            <div class="number_items">
+                <p class="number_count">9,774</p>
+                <p>HAPPY CLIENTS</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="exp"></section>
+    <section class="contact"></section>
+    <footer></footer>
+
+
+
+    <!-- <ul>
+            <li>
+                    <a href="">HOME</a>
+                
+            </li>
+        </ul> -->
+
+    <!-- <h1>Block</h1>
+<a href="http://">inline</a> <a href="http://">inline</a> -->
+
+    <!-- <p style="color: blueviolet;">Lorem, <span style="color: red;">ipsum dolor</span> sit amet consectetur adipisicing elit. Quam neque consectetur adipisci placeat autem. Beatae minima iure quam at eius vel dolor, ab veniam necessitatibus rerum animi iusto dolores quo.</p> -->
+
+    <!-- <div class="relative">
+    <p class="absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam neque consectetur adipisci placeat autem. Beatae minima iure quam at eius vel dolor, ab veniam necessitatibus rerum animi iusto dolores quo.</p>
+
+</div> -->
+
+
+    <!-- Lý do: để khi js bị lỗi thì các phần nội dung HTML, CSS đã được load đầy đủ-->
+
+    <!--B1: cài đặt - JS thư viện fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- js internal 
+ B2: gọi thư viện ra sử dụng-->
+    <script>
+
+        Fancybox.bind("[data-fancybox]", {
+
+        });
+    </script>
+
+
+</body>
+
+</html>
